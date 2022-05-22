@@ -1,0 +1,30 @@
+<div class="container p-3">
+    <h1>TodoList</h1>
+    <form class="container" method="post" action="/">
+        <div class="mb-3">
+            <label class="form-label">Add todo</label>
+            <input type="text" class="form-control" name="todo" placeholder="Enter a task">
+          </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </form> 
+</div>
+<div class="container p-3">
+    <h1>Data</h1>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Items</th>
+          </tr>
+        </thead>
+        <tbody>
+            <%todosList.forEach(todo => {%>
+                <tr>
+                    <th scope="row"><%= todo._id %></th>
+                    <td><%= todo.todo %></td>
+                  </tr>
+            <%})%>
+      </table>
+</div>
