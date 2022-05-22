@@ -1,12 +1,13 @@
-const express = require('express')
+const express = require('express');
 const mongoose = require("mongoose");
 const ejs = require("ejs");
-const app = express()
+const app = express();
+require('dotenv').config();
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended:true}));
 
-mongoose.connect("mongodb+srv://gamer73:guruprasad73@cluster0.fpqtc.mongodb.net/todoDB")
+mongoose.connect(process.env.CONN);
 
 const todosSchema = {
     todo: String
