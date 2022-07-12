@@ -2,7 +2,7 @@
 
 ## Description
 
-A TodoList Application built using NodeJS. It can be used tasks todo and delete them after done.
+A TodoList Application built using NodeJS and ExpressJS. It can be used tasks todo and delete them after done.
 The Application stores the list data in a MongoDB database and uses Mongoose to connect to the database.
 EJS is used to render views and Bootstrap to make the application look good.
 
@@ -13,6 +13,8 @@ EJS is used to render views and Bootstrap to make the application look good.
 * EJS
 * Mongoose
 * Bootstrap
+* Express
+* Express.js
 
 ### Executing program
 
